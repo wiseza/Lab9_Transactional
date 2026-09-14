@@ -1,5 +1,9 @@
 package com.example.lab9.repository;
 
-public class AccountRepository {
-    
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.lab9.model.Account;
+
+public interface AccountRepository extends JpaRepository<Account, Long> {
+
 }
